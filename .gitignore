@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+data/bootstrap.json
+data/fixtures.json
+.DS_Store
+.venv/
