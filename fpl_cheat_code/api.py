@@ -72,9 +72,23 @@ def target_gameweek(boot):
 
 
 def current_squad(entry_id, boot):
-    """The manager's current 15 players: last finished GW's picks + any
-    transfers made since. (Current-GW picks require auth, so we reconstruct.)
-    Returns (picks_json, gameweek_they_came_from)."""
+    """The manager's current 15 players: last finished GW's picks with any
+    transfers made since applied. (Current-GW picks require auth, so we
+    reconstruct.) New signings inherit their predecessor's slot; captaincy
+    is cleared if the captain was sold. Returns (picks_list, gameweek)."""
     last = last_finished_event(boot)
-    picks = entry_picks(entry_id, last["id"]) if last else None
-    return picks, (last["id"] if last else None)
+    if not last:
+        return None, None
+    picks = entry_picks(entry_id, last["id"])
+    target = target_gameweek(boot)
+    rows = picks["picks"]
+    for t in entry_transfers(entry_id):
+        if t["event"] < target["id"]:
+            continue
+        for i, pk in enumerate(rows):
+            if pk["element"] == t["element_out"]:
+                rows[i] = {"element": t["element_in"], "position": pk["position"],
+                           "is_captain": False, "is_vice_captain": False,
+                           "selling_price": t.get("selling_price"), "multiplier": 1}
+                break
+    return picks, last["id"]
