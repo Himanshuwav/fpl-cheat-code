@@ -55,6 +55,27 @@ Janelt first: Brentford vs Sunderland is the week's second-easiest fixture and J
 - Shaw doesn't start (or plays <60') and Ajayi returns ≥ 2 pts more → move validated.
 - Haaland hauls (13+ pts) → captaincy validated. If Bruno outscores him 2× and we lose the week to the leader captaining Bruno, we re-examine nothing — the decision was +EV at kickoff. Process over outcomes, but the log keeps us honest either way.
 
+### Final locked squad (deadline 17:30 UTC, 2026-09-04)
+
+- **Transfers (2 free, no hits)**: Shaw → **Ajayi** ✓, Tzolis → **Lewis-Potter** ✓
+- **Captain: Haaland (C), Bruno (VC).** The full arc, recorded honestly: our model + a unanimous 12/12 panel of three-year top-10k managers said **Bruno**; the manager's own read — home vs newly promoted is the game's best haul script — plus the model's known anti-Haaland bias (2-gameweek shrinkage, no bonus or ceiling modeling) and the chase posture (31 pts behind in the mini-league favors ceiling over floor) flipped the final call back to **Haaland**. A near-coin-flip resolved toward ceiling *because we are chasing*. The elite-12 Bruno pick is logged as a live counter-hypothesis: if Bruno outscores Haaland decisively this week, we revisit the floor-vs-ceiling framework in the GW4 review.
+- Bench order: Janelt, Davis, van Ewijk, Kinsky. No chips. Formation 3-4-3.
+- Locked XI: Raya; Calafiori, Ajayi, Hume; Lewis-Potter, Semenyo, B.Fernandes, Ndiaye; João Pedro, Calvert-Lewin, **Haaland (C)**.
+
+### Elite-benchmark note (the "work backwards" exercise)
+
+The 12-manager tracker used (top-10k OR in each of the last 3 seasons, avg OR 3,495): all 12 captained Bruno; every one rolled their free transfer; avg team value £100.2m — identical to ours. Both of their template squads contained our pieces (Haaland/Ndiaye/Tzolis/Raya/Kinsky/van Ewijk), i.e., our squad is already a fusion of the two elite structures. Source: [fantasyfootballgeek.co.uk GW3 tracker](https://www.fantasyfootballgeek.co.uk/fpl-transfer-tips-gw3-12-top-fpl-1926/).
+
+### What we're watching (predictions on record, to be scored in the GW3 review)
+
+| Player | Model xP | The bet |
+|---|---|---|
+| Haaland (C) vs COV | 4.46 | Ceiling play; model underrates him |
+| B.Fernandes @ EVE | 8.00 | Model's #1; the elites' captain |
+| Lewis-Potter vs SUN | 4.98 | The +3.4 xP transfer |
+| Ajayi vs AVL | 5.31 | Form defender, goal threat |
+| Raya/Calafiori vs CHE | 2.87/5.30 | Coin-flip fixture, CS-dependent |
+
 ---
 
 <!-- Next entries: add one section per gameweek, same format. -->
